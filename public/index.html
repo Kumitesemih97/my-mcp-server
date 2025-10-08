@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP Server - 24 Tools Available</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="chat-container">
+        <h1>🤖 MCP Server with Ollama <code>llama3.2:3b</code></h1>
+        <div id="tool-suggestions">
+            <h3>💡 Tool Categories - Click to get suggestions:</h3>
+            <div id="tool-buttons">
+                <button class="tool-btn text-tools" onclick="showToolSuggestion('text')">📝 Text Tools</button>
+                <button class="tool-btn time-tools" onclick="showToolSuggestion('time')">⏰ Time Tools</button>
+                <button class="tool-btn system-tools" onclick="showToolSuggestion('system')">🖥️ System Info</button>
+                <button class="tool-btn file-tools" onclick="showToolSuggestion('file')">📁 File Tools</button>
+                <button class="tool-btn process-tools" onclick="showToolSuggestion('process')">🔄 Process Tools</button>
+                <button class="tool-btn network-tools" onclick="showToolSuggestion('network')">🌐 Network Tools</button>
+                <button class="tool-btn config-tools" onclick="showToolSuggestion('config')">⚙️ Config Tools</button>
+                <button class="tool-btn external-tools" onclick="showToolSuggestion('external')">🌍 External APIs</button>
+            </div>
+            <div id="suggestion-box"></div>
+        </div>
+        
+        <div id="interactive-buttons">
+            <h3>🎨 Interactive Colored Buttons - Try saying "press red button" or "click blue button":</h3>
+            <div id="colored-buttons">
+                <button class="interactive-btn red-btn" data-color="red">🔴 RED</button>
+                <button class="interactive-btn blue-btn" data-color="blue">🔵 BLUE</button>
+                <button class="interactive-btn green-btn" data-color="green">🟢 GREEN</button>
+                <button class="interactive-btn yellow-btn" data-color="yellow">🟡 YELLOW</button>
+                <button class="interactive-btn purple-btn" data-color="purple">🟣 PURPLE</button>
+                <button class="interactive-btn orange-btn" data-color="orange">🟠 ORANGE</button>
+            </div>
+            <div id="button-status">Ready to press buttons! 🎯</div>
+        </div>
+        <div id="chat-box"></div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Ask something... (e.g., 'Convert Hello to leet speak', 'Get current time', 'Show system info')" autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
