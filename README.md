@@ -40,7 +40,7 @@ Now, let's get the server code.
 
 ```bash
 # Clone the project repository
-git clone https://github.com/your-username/my-mcp-server.git
+git clone https://github.com/Kumitesemih97/my-mcp-server.git
 
 # Navigate into the project directory
 cd my-mcp-server
